@@ -96,6 +96,24 @@
   </div>
 
 
+  <script>
+// Agregar clase 'touch' a '.photo' en dispositivos táctiles
+if ('ontouchstart' in window) {
+  document.querySelectorAll('.photo').forEach(function(photo) {
+    photo.addEventListener('touchstart', function() {
+      this.classList.add('touch');
+    });
+    photo.addEventListener('touchend', function() {
+      this.classList.remove('touch');
+    });
+  });
+}
+
+
+
+  </script>
+
+
 
 
 
