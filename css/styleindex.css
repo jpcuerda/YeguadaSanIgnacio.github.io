@@ -321,17 +321,6 @@ body {
 
 
 
-.photo img {
-            width: 100%;
-            filter: grayscale(100%);
-            transition: filter 0.5s;
-        }
-
-        .photo:hover img {
-            filter: grayscale(0%);
-        }
-
-
 
 
 
@@ -518,4 +507,64 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* Asegura que las fotos se envuelvan cuando no quepan en una sola fila */
+}
+
+.photo {
+  position: relative;
+  flex: 1 1 25%; /* Ancho del 25% para mostrar cuatro fotos por fila en pantallas de ordenador */
+  overflow: hidden;
+  transition: flex-grow 0.5s;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s;
+  filter: grayscale(100%); /* Inicialmente en blanco y negro */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.photo img:hover {
+  filter: grayscale(0%); /* Cambia a color al interactuar */
+  transform: scale(1.1);
+}
+
+.photo img:hover + .overlay {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .photo {
+    flex-basis: 50%; /* Cambia el ancho para mostrar dos fotos por columna en dispositivos móviles */
+  }
+
+  .photo img:hover {
+    filter: grayscale(0%); /* En dispositivos móviles, cambia a color al interactuar */
+  }
+
+  .photo img:hover + .overlay {
+    opacity: 1;
+  }
+}
 
