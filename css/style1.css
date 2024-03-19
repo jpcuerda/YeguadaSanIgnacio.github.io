@@ -401,11 +401,28 @@ body {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center; /* Centra el texto horizontalmente */
-  
   color: white; /* Color del texto */
-  font-size: 70px; /* Tamaño de fuente del texto */
+  font-size: 4vw;  /*Tamaño de fuente del texto en relación con el ancho de la ventana */
   z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+  /* margin-top: -2vw; Ajusta la posición vertical del texto al -50% del tamaño de la fuente */
 }
+/* Estilos adicionales para hacer la imagen y el texto responsivos */
+@media screen and (max-width: 768px) {
+  .text-overlay {
+      font-size: 6vw; /* Ajusta el tamaño de fuente en dispositivos más pequeños */
+     
+     
+  }
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100px; /* Fija la altura de la imagen a 40px */
+    overflow: hidden; /* Oculta cualquier contenido que exceda los límites del contenedor */
+  }
+}
+
+
+
 
 
 
