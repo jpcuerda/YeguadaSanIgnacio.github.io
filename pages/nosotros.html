@@ -6,7 +6,7 @@
     <title>Yeguada San Ignacio</title>
     <!-- Agregar enlaces a los archivos CSS y JavaScript de Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/style1.css">
 
 </head>
 <body>
@@ -51,16 +51,7 @@
 
 <!-- ------------------------------------------------------------------------------- -->
 
-<div class="container">
-  <h1>Selector de Caballos</h1>
-  <div class="options">
-      <button id="sementalesBtn" onclick="showSementales()">Sementales</button>
-      <button id="yeguasBtn" onclick="showYeguas()">Yeguas</button>
-      <button id="potrosBtn" onclick="showPotros()">Potros</button>
-      <button id="potrasBtn" onclick="showPotras()">Potras</button>
-  </div>
-  <div id="content"></div>
-</div>
+
 
 
 
@@ -79,15 +70,19 @@
     <div class="footerHeader" ></div>
     <div class="container">
         <div class="col-md-4" >
-            <h3>Quienes somos</h3>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+            
+            <h3>Donde Estamos </h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d433868.0837064906!2d35.66744174160663!3d31.836036762053016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5fb85d7981af%3A0x631c30c0f8dc65e8!2sAmman!5e0!3m2!1sen!2sjo!4v1499168051085" sytle="" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         
         <div class="col-md-4">
-            <h3>Donde Estamos </h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d433868.0837064906!2d35.66744174160663!3d31.836036762053016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5fb85d7981af%3A0x631c30c0f8dc65e8!2sAmman!5e0!3m2!1sen!2sjo!4v1499168051085" sytle="" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <h3>Nuestras Redes Sociales </h3>
+          <ul class="sm">
+            <li><a href="#" ><img src="https://www.facebook.com/images/fb_icon_325x325.png" class="img-responsive"></a></li>
+            <li><a href="#" ><img src="https://armariosseykemadrid.es/wp-content/uploads/2019/05/instagram-png-instagram-png-logo-1455.png" class="img-responsive" ></a></li>
+            <li><a href="#" ><img src="http://playbookathlete.com/wp-content/uploads/2016/10/twitter-logo-4.png" class="img-responsive"  ></a></li>
+        </ul>
+          
         </div>
         <div class="col-md-4" >
             <h3>Contacto</h3>
@@ -99,153 +94,10 @@
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
             </p>
-            <ul class="sm">
-                <li><a href="#" ><img src="https://www.facebook.com/images/fb_icon_325x325.png" class="img-responsive"></a></li>
-                <li><a href="#" ><img src="https://armariosseykemadrid.es/wp-content/uploads/2019/05/instagram-png-instagram-png-logo-1455.png" class="img-responsive" ></a></li>
-                <li><a href="#" ><img src="http://playbookathlete.com/wp-content/uploads/2016/10/twitter-logo-4.png" class="img-responsive"  ></a></li>
-            </ul>
+            
         </div>
     </div>
 </footer>
-
-
-
-
-
-<!-- Agregar enlaces a los archivos JavaScript de Bootstrap 5 y jQuery (si es necesario) -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
-
-<!-- Añade el siguiente script después de cargar jQuery y Bootstrap -->
-<script>
-
-const sementalesData = [
-    {
-        nombre: "Semental 1",
-        sexo: "Macho",
-        raza: "Raza 1",
-        capa: "Capa 1",
-        fechaNacimiento: "01/01/2010",
-        fotos: ["semental1-1.jpg", "semental1-2.jpg"],
-        foto1: ["semental1-1.jpg"]
-    },
-    {
-        nombre: "Semental 2",
-        sexo: "Macho",
-        raza: "Raza 2",
-        capa: "Capa 2",
-        fechaNacimiento: "01/01/2011",
-        fotos: ["semental2-1.jpg", "semental2-2.jpg"],
-        foto1: ["semental1-1.jpg"]
-    }
-];
-
-const yeguasData = [
-    {
-        nombre: "Yegua 1",
-        sexo: "Hembra",
-        raza: "Raza 3",
-        capa: "Capa 3",
-        fechaNacimiento: "01/01/2012",
-        foto: "yegua1.jpg"
-    }
-];
-
-function showSementales() {
-    let content = document.getElementById("content");
-    content.innerHTML = "";
-
-    sementalesData.forEach(semental => {
-        semental.foto1.forEach(foto => {
-            let img = document.createElement("img");
-            img.src = foto;
-            img.alt = semental.nombre;
-            img.addEventListener("click", function() {
-                showInfo(semental);
-            });
-            content.appendChild(img);
-        });
-    });
-}
-
-function showYeguas() {
-    let content = document.getElementById("content");
-    content.innerHTML = "";
-
-    let table = document.createElement("table");
-    table.innerHTML = `
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Sexo</th>
-                <th>Raza</th>
-                <th>Capa</th>
-                <th>F. Nacimiento</th>
-            </tr>
-        </thead>
-        <tbody>
-            ${yeguasData.map(yegua => `
-                <tr>
-                    <td>${yegua.nombre}</td>
-                    <td>${yegua.sexo}</td>
-                    <td>${yegua.raza}</td>
-                    <td>${yegua.capa}</td>
-                    <td>${yegua.fechaNacimiento}</td>
-                </tr>
-            `).join('')}
-        </tbody>
-    `;
-    content.appendChild(table);
-
-    let tableRows = table.querySelectorAll("tbody tr");
-    tableRows.forEach((row, index) => {
-        row.addEventListener("click", function() {
-            showInfo(yeguasData[index]);
-        });
-    });
-}
-
-function showInfo(caballo) {
-    let content = document.getElementById("content");
-    content.innerHTML = `
-        <div class="info">
-            <h2>${caballo.nombre}</h2>
-            <p>Sexo: ${caballo.sexo}</p>
-            <p>Raza: ${caballo.raza}</p>
-            <p>Capa: ${caballo.capa}</p>
-            <p>F. Nacimiento: ${caballo.fechaNacimiento}</p>
-        </div>
-    `;
-
-    if (caballo.fotos) {
-        caballo.fotos.forEach(foto => {
-            let img = document.createElement("img");
-            img.src = foto;
-            img.alt = caballo.nombre;
-            content.appendChild(img);
-        });
-    } else if (caballo.foto) {
-        let img = document.createElement("img");
-        img.src = caballo.foto;
-        img.alt = caballo.nombre;
-        content.appendChild(img);
-    }
-}
-
-// Define funciones para mostrar Potros y Potras de manera similar...
-
-// Define funciones para mostrar Potros y Potras de manera similar...
-
-function showPotros() {
-    // Similar al caso de Yeguas, pero con los datos de los potros
-}
-
-function showPotras() {
-    // Similar al caso de Yeguas, pero con los datos de las potras
-}
-
-</script>
-
 
 
 
