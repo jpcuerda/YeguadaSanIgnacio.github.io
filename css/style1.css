@@ -384,32 +384,26 @@ body {
   background-color: black; /* Define el color de fondo de la línea */
   width: 100%; /* Define el ancho de la línea para que ocupe toda la pantalla */
 }
-
-
 .menu-section {
   text-align: center;
-  padding: 20px 20px; /* Añadimos un relleno a los lados para los márgenes laterales */
+  padding: 20px 0;
 }
 
 .menu {
-  display: inline-block;
-  border: 1px solid black;
-  width: 90%; /* Establecemos una anchura del 90% */
-  max-width: 900px; /* Establecemos una anchura máxima */
-  margin: 0 auto; /* Centramos horizontalmente */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .menu ul {
   list-style-type: none;
   padding: 0;
-  text-align: center; /* Alinea el texto del menú al centro */
-  justify-content: center;
+  margin: 0;
+  display: flex; /* Cambiamos a flexbox para alinear los elementos */
+  justify-content: center; /* Alineamos horizontalmente los elementos */
 }
 
 .menu li {
-  display: inline-block;
   margin-right: 20px;
-  vertical-align: middle; 
 }
 
 .menu li:last-child {
@@ -418,12 +412,23 @@ body {
 
 .menu a {
   text-decoration: none;
-  color: black;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+  display: block; /* Convertimos los enlaces en bloques para establecer un tamaño fijo */
+  min-width: 120px; /* Establecemos un ancho mínimo para todos los elementos */
+  text-align: center;
 }
 
 .menu a:hover {
-  color: gray;
+  background-color: #343a40;
+  color: #fff;
 }
+
+
 
 .photo1 {
   position: relative;
