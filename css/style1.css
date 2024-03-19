@@ -140,10 +140,22 @@ footer .col-md-4 ul.sm li {
 
 
 
+
+
 body {
     font-family: Times New Roman, sans-serif;
     text-align: center;
 }
+
+
+
+
+
+
+
+/* -------------------- */
+
+
 
 
 
@@ -164,7 +176,19 @@ body {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-
+.btn-send {
+          display: block;
+          width: 100px;
+          margin: 20px auto;
+          padding: 10px;
+          text-align: center;
+          background-color: #56728f;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          text-decoration: none;
+}
 
 
 
