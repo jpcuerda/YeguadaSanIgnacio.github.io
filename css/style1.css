@@ -1,6 +1,6 @@
 .navbar-logo {
             max-width: 30px; /* Ajusta el tamaño máximo del logo según tus necesidades */
-            margin-left: 20px;
+            margin-left: 30px;
         }
 
 .bg-green {
@@ -103,6 +103,24 @@ footer .col-md-4 {
     margin: 0 10px;
     padding: 0;
 }
+
+
+footer .col-md-4 iframe {
+  width: 100%; /* Ajustamos el ancho al 100% */
+  max-width: 100%; /* También podemos agregar un máximo para evitar desbordamientos */
+  height: auto; /* Permitimos que la altura se ajuste automáticamente */
+  margin-top: 10px; /* Agregamos un margen arriba para separarlo */
+}
+
+footer .col-md-4 ul.sm {
+  display: flex;
+  justify-content: center;
+}
+
+footer .col-md-4 ul.sm li {
+  margin: 0 5px;
+}
+
 
 @media (max-width: 768px) {
     footer .container {
@@ -342,3 +360,98 @@ body {
     background-attachment: fixed; /* Fija la imagen de fondo en su posición mientras se desplaza el contenido */
     /* Puedes agregar más propiedades CSS según tus necesidades, como el color de texto, margen, relleno, etc. */
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Nuestra Yeguada */
+.logo1 {
+  margin-top: 20px;
+  max-width: 100px; /* Define el ancho máximo de la imagen */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la relación de aspecto */
+}
+
+.black-line {
+  margin-top: 8px;
+  height: 1px; /* Define la altura de la línea negra */
+  background-color: black; /* Define el color de fondo de la línea */
+  width: 100%; /* Define el ancho de la línea para que ocupe toda la pantalla */
+}
+
+
+.menu-section {
+  text-align: center;
+  padding: 20px 20px; /* Añadimos un relleno a los lados para los márgenes laterales */
+}
+
+.menu {
+  display: inline-block;
+  border: 1px solid black;
+  width: 90%; /* Establecemos una anchura del 90% */
+  max-width: 900px; /* Establecemos una anchura máxima */
+  margin: 0 auto; /* Centramos horizontalmente */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; /* Alinea el texto del menú al centro */
+  justify-content: center;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle; 
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  color: gray;
+}
+
+.photo1 img {
+  width: 100%;
+}
+
+.photo1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.photo1 img:hover {
+  filter: grayscale(100%); /* Aplicar filtro de escala de grises al pasar el ratón */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 24px; /* Ajusta el tamaño de fuente según sea necesario */
+}
+
+.photo1:hover .text-overlay {
+  opacity: 1; /* Mostrar el texto al pasar el ratón */
+}
+
+
+
