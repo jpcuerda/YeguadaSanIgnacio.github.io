@@ -425,33 +425,23 @@ body {
   color: gray;
 }
 
-.photo1 img {
-  width: 100%;
-}
-
 .photo1 {
   position: relative;
-  overflow: hidden;
 }
 
-.photo1 img:hover {
-  filter: grayscale(100%); /* Aplicar filtro de escala de grises al pasar el ratón */
+.photo1 img {
+  width: 100%;
+  filter: grayscale(70%); /* Aplicar escala de grises */
 }
 
-.text-overlay {
+.overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  font-size: 24px; /* Ajusta el tamaño de fuente según sea necesario */
+  color: white; /* Color de texto blanco */
+  background-color: transparent; /* Fondo transparente */
+  padding: 20px; /* Ajustar el tamaño del padding para hacer el texto más grande */
+  font-size: 30px; /* Tamaño de fuente más grande */
 }
-
-.photo1:hover .text-overlay {
-  opacity: 1; /* Mostrar el texto al pasar el ratón */
-}
-
-
 
