@@ -47,90 +47,115 @@
 
 footer {
 
-    margin-top: 50px;
-    
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #7FA88F;
-    font-weight: lighter;
-    color: white;
+  margin-top: 50px;
+  
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #7FA88F;
+  font-weight: lighter;
+  color: white;
 }
 .footerHeader{
-    width:100%;
-    padding:1em;
-    background-color:#346C4A;
-    text-align:center;
-    color:white;
+  width:100%;
+  padding:1em;
+  background-color:#346C4A;
+  text-align:center;
+  color:white;
 }
 footer h3{
-    font-weight:lighter;
+  font-weight:lighter;
 }
 footer ul{
-    padding-left:5px;
-    list-style:none;
+  padding-left:5px;
+  list-style:none;
 }
 footer p{
-    text-align : justify;
-    font-size : 12px;
+  text-align : justify;
+  font-size : 12px;
 }
 footer iframe {
-    width:100%;
-    position:relative;
-    height:170px;
+  width:100%;
+  position:relative;
+  height:170px;
 }
 .sm{
-    list-style:none;
-    overflow:auto;
+  list-style:none;
+  overflow:auto;
 }
 .sm li {
-    display: inline;
-    padding:5px;
-    float:left;
+  display: inline;
+  padding:5px;
+  float:left;
 } 
 .sm li a img {
-    width:32px;
+  width:32px;
 }
 footer .container {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
 
 }
 
 footer .col-md-4 {
-    flex: 1;
-    margin: 0 10px;
-    padding: 0;
+  flex: 1;
+  margin: 0 10px;
+  padding: 0;
 }
 
 
 footer .col-md-4 iframe {
-  width: 100%; /* Ajustamos el ancho al 100% */
-  max-width: 100%; /* También podemos agregar un máximo para evitar desbordamientos */
-  height: auto; /* Permitimos que la altura se ajuste automáticamente */
-  margin-top: 10px; /* Agregamos un margen arriba para separarlo */
+width: 100%; /* Ajustamos el ancho al 100% */
+max-width: 100%; /* También podemos agregar un máximo para evitar desbordamientos */
+height: auto; /* Permitimos que la altura se ajuste automáticamente */
+margin-top: 10px; /* Agregamos un margen arriba para separarlo */
 }
 
 footer .col-md-4 ul.sm {
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
 }
 
 footer .col-md-4 ul.sm li {
-  margin: 0 5px;
+margin: 0 5px;
 }
+
+
+
+
+
+footer .col-md-4 .associations {
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin-top: 20px;
+}
+
+footer .col-md-4 .associations a {
+margin: 0 10px;
+}
+
+footer .col-md-4 .associations img {
+width: 140px;
+}
+
+
 
 
 @media (max-width: 768px) {
-    footer .container {
-        flex-direction: column;
-    }
+  footer .container {
+      flex-direction: column;
+  }
 
-    footer .col-md-4 {
-        margin: 10px 0;
-    }
+  footer .col-md-4 {
+      margin: 10px 0;
+  }
 }
+
+
+
+
 
 
 
