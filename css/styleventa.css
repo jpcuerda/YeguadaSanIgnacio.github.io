@@ -218,7 +218,7 @@ body {
 
 /* Estilos para los botones */
 .btn {
-  border-radius: 25px; /* Bordes redondeados */
+  border-radius: 5px; /* Reducimos el radio de borde para hacer los botones más rectangulares */
   padding: 10px 20px; /* Espaciado interno */
   margin-top: 20px; /* Espaciado superior */
   font-size: 18px; /* Tamaño de fuente */
@@ -456,3 +456,75 @@ body {
 
 
 
+
+/* Estilos para la tabla */
+/* Estilos para la tabla */
+.table-container {
+  margin-top: 30px;
+  overflow-x: auto; /* Hacer que la tabla sea desplazable horizontalmente en dispositivos pequeños */
+}
+
+.table {
+  width: 1000px; /* Ancho máximo de la tabla */
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Centrar la tabla horizontalmente */
+}
+
+.table th, .table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  color: #495057;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para el formulario */
+/* Estilos para el formulario */
+#filter-form {
+  margin-bottom: 30px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+}
+
+#filter-form .form-group {
+  flex: 1 0 45%; /* Tamaño flexible para que ocupe el 45% del ancho */
+  margin-right: 20px; /* Espacio entre los elementos */
+}
+
+#filter-form .form-group:last-child {
+  margin-right: 0; /* Eliminar el margen derecho del último elemento */
+}
+
+@media (max-width: 768px) {
+  #filter-form .form-group {
+      flex: 1 0 100%; /* Para dispositivos móviles, ocupa todo el ancho disponible */
+      margin-right: 0; /* Elimina el margen derecho en dispositivos móviles */
+      margin-bottom: 15px; /* Agrega espacio entre los elementos en dispositivos móviles */
+  }
+
+  .table {
+      width: 100%; /* La tabla ocupará todo el ancho disponible en dispositivos móviles */
+  }
+}
+
+#filter-btn {
+  margin-top: 20px; /* Espacio superior para separar el botón del resto de los elementos */
+}
