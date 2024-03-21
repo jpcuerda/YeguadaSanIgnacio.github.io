@@ -27,6 +27,9 @@
                     <a class="nav-link elegant-font" href="pages/nosotros.html">NUESTRA YEGUADA</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link elegant-font" href="pages/venta.html">VENTA</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link elegant-font" href="pages/galeria.html">GALERIA</a>
                 </li>
                 <li class="nav-item">
@@ -60,6 +63,13 @@
         <p>La Yeguada San Ignacio está dedicada a la cría de caballos de Pura Raza Española, ubicada en los términos municipales de Valencia de Alcántara.</p>
     </div>
 </section>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        // Espera a que el DOM esté completamente cargado
+        var overlayText = document.querySelector('.stext-overlay-custom');
+        overlayText.classList.add('show'); // Agrega la clase 'show' al elemento de texto
+    });
+</script>
 
 
 
@@ -79,42 +89,59 @@
   <div class="gallery">
     <a href="pages/sementales/#" class="photo" id="sementales">
       <img src="fotos/semental.jpg" alt="Sementales">
-      <div class="overlay">Ver<br>Sementales</div>
+      <div class="overlay">SEMENTALES</div>
     </a>
-    <a href="yeguas.html" class="photo" id="yeguas">
+    <a href="pages/caballos/#" class="photo" id="potras">
+        <img src="fotos/potra.JPG" alt="Caballos">
+        <div class="overlay">CABALLOS</div>
+      </a>
+    <a href="pages/yeguas/yeguas.html" class="photo" id="yeguas">
       <img src="fotos/yegua.JPG" alt="Yeguas">
-      <div class="overlay">Ver<br>Yeguas</div>
+      <div class="overlay">YEGUAS</div>
     </a>
     <a href="pages/potros/potros.html" class="photo" id="potros">
       <img src="fotos/potro.JPG" alt="Potros">
-      <div class="overlay">Ver<br>Potros</div>
+      <div class="overlay">POTROS</div>
     </a>
-    <a href="pages/potras/potras.html" class="photo" id="potras">
-      <img src="fotos/potra.JPG" alt="Potras">
-      <div class="overlay">Ver<br>Potras</div>
-    </a>
+    
   </div>
 
 
   <script>
-// Agregar clase 'touch' a '.photo' en dispositivos táctiles
-if ('ontouchstart' in window) {
-  document.querySelectorAll('.photo').forEach(function(photo) {
-    photo.addEventListener('touchstart', function() {
-      this.classList.add('touch');
-    });
-    photo.addEventListener('touchend', function() {
-      this.classList.remove('touch');
-    });
-  });
-}
+    // Agregar clase 'touch' a '.photo' en dispositivos táctiles
+    if ('ontouchstart' in window) {
+      document.querySelectorAll('.photo').forEach(function(photo) {
+        photo.addEventListener('touchstart', function() {
+          this.classList.add('touch');
+        });
+        photo.addEventListener('touchend', function() {
+          this.classList.remove('touch');
+        });
+      });
+    }
+    
+    
+</script>
+
+
+<!-- Añade esta sección después de la galería existente -->
+<section class="selling-section">
+    <div class="selling-content">
+      <h2>¡Descubre nuestros ejemplares en venta!</h2>
+      <p>Explora nuestra selección cuidadosamente criada de caballos de Pura Raza Española disponibles para la venta. Encuentra el compañero perfecto que se adapte a tus necesidades y expectativas.</p>
+    </div>
+
+
+  </section>
+  
 
 
 
-  </script>
-
-
-
+  <div class="container123">
+    <a href="pages/venta.html" class="venta-link">
+      <span class="venta-texto">VENTA</span>
+    </a>
+  </div>
 
 
 

@@ -181,8 +181,12 @@ body {
   font-size: 6vw;  /*Tamaño de fuente del texto en relación con el ancho de la ventana */
   z-index: 1; /* Asegura que el texto esté por encima de la imagen */
   /* margin-top: -2vw; Ajusta la posición vertical del texto al -50% del tamaño de la fuente */
+  opacity: 0; /* Establece la opacidad inicial en 0 */
+  transition: opacity 1s ease-in-out;
 }
-
+.stext-overlay-custom.show {
+  opacity: 1; /* Cuando se agrega la clase 'show', la opacidad cambia a 1 */
+}
 
 
 
@@ -275,6 +279,87 @@ body {
       max-width: 120px; /* Reducimos el tamaño del logo */
     }
   }
+
+
+
+
+  
+
+  .selling-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .selling-content {
+    margin-bottom: 30px;
+  }
+  
+  .selling-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .selling-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  
+  
+
+
+
+  .container123 {
+    width: 100%;
+    height: 300px;
+    background-image: url('../fotos/back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding-top: 0px;
+    filter: brightness(90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .venta-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+  
+  .venta-texto {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* asegura que el texto sea blanco */
+  }
+  
+  
+
+
+  
+  /* Añade más estilos según sea necesario */
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+  
 /* -------------------- */
 
 
