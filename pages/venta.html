@@ -52,10 +52,13 @@
   </nav>
 
 
+<!-- ------------------------------------------------------------------------------- -->
 
 
 
-  <section class="title content-title">
+
+
+<section class="title content-title">
     
     
     <div class="image-container">
@@ -82,6 +85,15 @@
 
 
 
+
+
+
+
+
+
+
+
+<!-- ------------------------------------------------------------------------------- -->
 
 
 
@@ -128,6 +140,25 @@
 
 
 
+<!-- Agregar enlaces a los archivos JavaScript de Bootstrap 5 y jQuery (si es necesario) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+
+<!-- Añade el siguiente script después de cargar jQuery y Bootstrap -->
+<script>
+    $(document).ready(function () {
+        // Cuando el cursor entra en el enlace "IDIOMA", agrega la clase "show" para mostrar el submenú
+        $('.nav-item.dropdown').mouseenter(function () {
+            $(this).find('.dropdown-menu').addClass('show');
+        });
+
+        // Cuando el cursor sale del enlace "IDIOMA", elimina la clase "show" para ocultar el submenú
+        $('.nav-item.dropdown').mouseleave(function () {
+            $(this).find('.dropdown-menu').removeClass('show');
+        });
+    });
+
+</script>
 
 
 
