@@ -1,45 +1,46 @@
 .navbar-logo {
-            max-width: 30px; /* Ajusta el tamaño máximo del logo según tus necesidades */
-            margin-left: 20px;
-        }
+  max-width: 30px; /* Ajusta el tamaño máximo del logo según tus necesidades */
+  margin-left: 30px;
+}
 
 .bg-green {
-    background-color: #7FA88F; /* Cambia este valor al color de fondo que desees */
+/*background-color: #7FA88F; /* Cambia este valor al color de fondo que desees */
+background-color: #08401d;
 }
 
 .elegant-font {
-    font-family: "TuFuenteElegante", Times New Roman, sans-serif; /* Cambia "TuFuenteElegante" por la fuente que desees usar */
-    /* Otros estilos de fuente, como tamaño y peso, pueden agregarse aquí según tus preferencias */
+font-family: "TuFuenteElegante", Times New Roman, sans-serif; /* Cambia "TuFuenteElegante" por la fuente que desees usar */
+/* Otros estilos de fuente, como tamaño y peso, pueden agregarse aquí según tus preferencias */
 }
 
 .custom-spacing .nav-item {
-    margin-right: 30px; /* Ajusta el valor del margen según tu preferencia */
+margin-right: 30px; /* Ajusta el valor del margen según tu preferencia */
 }
 
 /* Estilo para el submenú del idioma */
 .dropdown-menu {
-    background-color: #7FA88F; /* Cambia este valor al color de fondo que desees para el submenú */
-    border: none; /* Quita el borde */
-    border-radius: 0; /* Quita la esquina redondeada */
-    box-shadow: none; /* Quita la sombra */
-    margin-top: 0; /* Evita que el submenú se solape con el menú principal */
-    max-width: 20px; /* Ajusta el ancho máximo del submenú según tus necesidades */
-    margin-left: -26px;
+background-color: #08401d; /* Cambia este valor al color de fondo que desees para el submenú */
+border: none; /* Quita el borde */
+border-radius: 0; /* Quita la esquina redondeada */
+box-shadow: none; /* Quita la sombra */
+margin-top: 0; /* Evita que el submenú se solape con el menú principal */
+max-width: 20px; /* Ajusta el ancho máximo del submenú según tus necesidades */
+margin-left: -26px;
 }
 
 .dropdown-menu a {
-    color: #fff; /* Cambia el color del texto a blanco */
-    padding: 10px 15px; /* Añade un poco de espaciado alrededor de los elementos del submenú */
+color: #fff; /* Cambia el color del texto a blanco */
+padding: 10px 15px; /* Añade un poco de espaciado alrededor de los elementos del submenú */
 }
 .bandera-idioma {
-    width: 20px; /* Ajusta el ancho de las banderas según tus necesidades */
-    margin-right: 10px; /* Ajusta el espaciado entre la bandera y el texto según tus necesidades */
+width: 20px; /* Ajusta el ancho de las banderas según tus necesidades */
+margin-right: 10px; /* Ajusta el espaciado entre la bandera y el texto según tus necesidades */
 }
 
 
 /* Estilo para subrayar los nombres del navbar al pasar el cursor por encima */
 .navbar-nav .nav-link:hover {
-    text-decoration: underline; /* Subraya el texto en amarillo */
+text-decoration: underline; /* Subraya el texto en amarillo */
 }
 
 
@@ -47,72 +48,114 @@
 
 footer {
 
-    margin-top: 50px;
-    
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #7FA88F;
-    font-weight: lighter;
-    color: white;
+margin-top: 50px;
+
+bottom: 0;
+left: 0;
+width: 100%;
+background-color: #08401d;
+font-weight: lighter;
+color: white;
 }
 .footerHeader{
-    width:100%;
-    padding:1em;
-    background-color:#346C4A;
-    text-align:center;
-    color:white;
+width:100%;
+padding:1em;
+background-color:#08401d;
+text-align:center;
+color:white;
 }
 footer h3{
-    font-weight:lighter;
+font-weight:lighter;
 }
 footer ul{
-    padding-left:5px;
-    list-style:none;
+padding-left:5px;
+list-style:none;
 }
 footer p{
-    text-align : justify;
-    font-size : 12px;
+text-align : justify;
+font-size : 12px;
 }
 footer iframe {
-    width:100%;
-    position:relative;
-    height:170px;
+width:100%;
+position:relative;
+height:170px;
 }
 .sm{
-    list-style:none;
-    overflow:auto;
+list-style:none;
+overflow:auto;
 }
 .sm li {
-    display: inline;
-    padding:5px;
-    float:left;
+display: inline;
+padding:5px;
+float:left;
 } 
 .sm li a img {
-    width:32px;
+width:32px;
 }
 footer .container {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
+margin-top: 30px;
+display: flex;
+justify-content: space-between;
 
 }
 
 footer .col-md-4 {
-    flex: 1;
-    margin: 0 10px;
-    padding: 0;
+flex: 1;
+margin: 0 10px;
+padding: 0;
 }
+
+
+footer .col-md-4 iframe {
+width: 100%; /* Ajustamos el ancho al 100% */
+max-width: 100%; /* También podemos agregar un máximo para evitar desbordamientos */
+height: auto; /* Permitimos que la altura se ajuste automáticamente */
+margin-top: 10px; /* Agregamos un margen arriba para separarlo */
+}
+
+footer .col-md-4 ul.sm {
+display: flex;
+justify-content: center;
+}
+
+footer .col-md-4 ul.sm li {
+margin: 0 5px;
+}
+
+
+
+
+
+footer .col-md-4 .associations {
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin-top: 20px;
+}
+
+footer .col-md-4 .associations a {
+margin: 0 10px;
+}
+
+footer .col-md-4 .associations img {
+width: 140px;
+}
+
+
+
 
 @media (max-width: 768px) {
-    footer .container {
-        flex-direction: column;
-    }
-
-    footer .col-md-4 {
-        margin: 10px 0;
-    }
+footer .container {
+flex-direction: column;
 }
+
+footer .col-md-4 {
+margin: 10px 0;
+}
+}
+
+
+
 
 
 
