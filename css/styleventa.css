@@ -1,0 +1,458 @@
+.navbar-logo {
+            max-width: 30px; /* Ajusta el tamaño máximo del logo según tus necesidades */
+            margin-left: 30px;
+        }
+
+.bg-green {
+    background-color: #7FA88F; /* Cambia este valor al color de fondo que desees */
+}
+
+.elegant-font {
+    font-family: "TuFuenteElegante", Times New Roman, sans-serif; /* Cambia "TuFuenteElegante" por la fuente que desees usar */
+    /* Otros estilos de fuente, como tamaño y peso, pueden agregarse aquí según tus preferencias */
+}
+
+.custom-spacing .nav-item {
+    margin-right: 30px; /* Ajusta el valor del margen según tu preferencia */
+}
+
+/* Estilo para el submenú del idioma */
+.dropdown-menu {
+    background-color: #7FA88F; /* Cambia este valor al color de fondo que desees para el submenú */
+    border: none; /* Quita el borde */
+    border-radius: 0; /* Quita la esquina redondeada */
+    box-shadow: none; /* Quita la sombra */
+    margin-top: 0; /* Evita que el submenú se solape con el menú principal */
+    max-width: 20px; /* Ajusta el ancho máximo del submenú según tus necesidades */
+    margin-left: -26px;
+}
+
+.dropdown-menu a {
+    color: #fff; /* Cambia el color del texto a blanco */
+    padding: 10px 15px; /* Añade un poco de espaciado alrededor de los elementos del submenú */
+}
+.bandera-idioma {
+    width: 20px; /* Ajusta el ancho de las banderas según tus necesidades */
+    margin-right: 10px; /* Ajusta el espaciado entre la bandera y el texto según tus necesidades */
+}
+
+
+/* Estilo para subrayar los nombres del navbar al pasar el cursor por encima */
+.navbar-nav .nav-link:hover {
+    text-decoration: underline; /* Subraya el texto en amarillo */
+}
+
+
+
+
+footer {
+
+    margin-top: 50px;
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7FA88F;
+    font-weight: lighter;
+    color: white;
+}
+.footerHeader{
+    width:100%;
+    padding:1em;
+    background-color:#346C4A;
+    text-align:center;
+    color:white;
+}
+footer h3{
+    font-weight:lighter;
+}
+footer ul{
+    padding-left:5px;
+    list-style:none;
+}
+footer p{
+    text-align : justify;
+    font-size : 12px;
+}
+footer iframe {
+    width:100%;
+    position:relative;
+    height:170px;
+}
+.sm{
+    list-style:none;
+    overflow:auto;
+}
+.sm li {
+    display: inline;
+    padding:5px;
+    float:left;
+} 
+.sm li a img {
+    width:32px;
+}
+footer .container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer .col-md-4 {
+    flex: 1;
+    margin: 0 10px;
+    padding: 0;
+}
+
+
+footer .col-md-4 iframe {
+  width: 100%; /* Ajustamos el ancho al 100% */
+  max-width: 100%; /* También podemos agregar un máximo para evitar desbordamientos */
+  height: auto; /* Permitimos que la altura se ajuste automáticamente */
+  margin-top: 10px; /* Agregamos un margen arriba para separarlo */
+}
+
+footer .col-md-4 ul.sm {
+  display: flex;
+  justify-content: center;
+}
+
+footer .col-md-4 ul.sm li {
+  margin: 0 5px;
+}
+
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .col-md-4 {
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Times New Roman, sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* -------------------- */
+
+
+
+
+
+/* Agrega este CSS en tu archivo de estilo o en la sección de estilos dentro del <head> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.photo img {
+            width: 100%;
+            filter: grayscale(100%);
+            transition: filter 0.5s;
+        }
+
+        .photo:hover img {
+            filter: grayscale(0%);
+        }
+
+
+
+
+
+
+
+
+
+
+
+  
+/*-----------------------------------------*/
+.container1 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; /* Reducimos el padding general */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+  text-align: center; /* Centramos el contenido en dispositivos móviles */
+  align-items: center; 
+}
+
+/*-----------------------------------------*/
+
+
+
+
+/* Estilos para los botones */
+.btn {
+  border-radius: 25px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  margin-top: 20px; /* Espaciado superior */
+  font-size: 18px; /* Tamaño de fuente */
+  transition: all 0.3s; /* Transición suave */
+}
+
+/* Estilos para el botón "Ver Todos" */
+.btn-primary {
+  background-color: #7FA88F; /* Color de fondo para el botón primario (azul) */
+  border-color: #7FA88F; /* Color del borde */
+  color: #fff; /* Color del texto */
+}
+
+.btn-primary:hover {
+  background-color: #7FA88F; /* Color de fondo al pasar el cursor */
+  border-color: #7FA88F; /* Color del borde al pasar el cursor */
+}
+
+/* Estilos para el botón "Filtrar" */
+.btn-secondary {
+  background-color: #6c757d; /* Color de fondo para el botón secundario (gris) */
+  border-color: #6c757d; /* Color del borde */
+  color: #fff; /* Color del texto */
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Color de fondo al pasar el cursor */
+  border-color: #545b62; /* Color del borde al pasar el cursor */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.horse-info {
+  margin-bottom: 30px; /* Espaciado entre cada fila */
+}
+
+.horse-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.horse-photo img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.horse-photo:hover img {
+  transform: scale(1.1); /* Efecto de escala al pasar el ratón */
+}
+
+.horse-description {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.horse-description h3 {
+  margin-top: 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Nuestra Yeguada */
+.title {
+  background-color: #f2f2f2; /* Color de fondo opcional para la sección */
+  padding: 0 0 40px; /* Añade 40px de espacio vertical en la parte inferior de la sección */
+  margin-top: 0; /* Elimina cualquier margen superior */
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 190px; /* Fija la altura de la imagen a 40px */
+  overflow: hidden; /* Oculta cualquier contenido que exceda los límites del contenedor */
+}
+
+.logo1 {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la relación de aspecto */
+  margin: 0; /* Elimina cualquier margen alrededor de la imagen */
+  padding: 0; /* Elimina cualquier relleno alrededor de la imagen */
+  filter: grayscale(40%); /* Aplica una desaturación del 50% */
+}
+
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center; /* Centra el texto horizontalmente */
+  color: white; /* Color del texto */
+  font-size: 4vw;  /*Tamaño de fuente del texto en relación con el ancho de la ventana */
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+  /* margin-top: -2vw; Ajusta la posición vertical del texto al -50% del tamaño de la fuente */
+}
+/* Estilos adicionales para hacer la imagen y el texto responsivos */
+@media screen and (max-width: 768px) {
+  .text-overlay {
+      font-size: 6vw; /* Ajusta el tamaño de fuente en dispositivos más pequeños */
+     
+     
+  }
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100px; /* Fija la altura de la imagen a 40px */
+    overflow: hidden; /* Oculta cualquier contenido que exceda los límites del contenedor */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.our-menu {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.our-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.our-menu li {
+  margin-right: 20px;
+}
+
+.our-menu li:last-child {
+  margin-right: 0;
+}
+
+.our-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+  display: block;
+  min-width: 120px;
+  text-align: center;
+}
+
+.our-menu a:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .our-menu li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .our-menu a {
+    padding: 8px 12px;
+    min-width: auto;
+  }
+}
+
+
+
+
+
+
+.photo1 {
+  position: relative;
+}
+
+.photo1 img {
+  width: 100%;
+  filter: grayscale(70%); /* Aplicar escala de grises */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Color de texto blanco */
+  background-color: transparent; /* Fondo transparente */
+  padding: 20px; /* Ajustar el tamaño del padding para hacer el texto más grande */
+  font-size: 30px; /* Tamaño de fuente más grande */
+}
+
+
+
+
+
