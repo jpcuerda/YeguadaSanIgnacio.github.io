@@ -206,7 +206,7 @@ body {
   z-index: 1; /* Asegura que el texto esté por encima de la imagen */
   /* margin-top: -2vw; Ajusta la posición vertical del texto al -50% del tamaño de la fuente */
   opacity: 0; /* Establece la opacidad inicial en 0 */
-  transition: opacity 1s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 .stext-overlay-custom.show {
   opacity: 1; /* Cuando se agrega la clase 'show', la opacidad cambia a 1 */
